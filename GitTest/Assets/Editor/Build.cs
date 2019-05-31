@@ -10,6 +10,8 @@ public class Build : Editor
     public static void ToBuild()
     {
         Debug.Log("Start to build ......jajaja");
+        
+        EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.Android);
 
         List<string> levels = new List<string>();
         foreach(
