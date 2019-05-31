@@ -9,6 +9,8 @@ public class Build : Editor
     [MenuItem ("Tool/Build")]
     public static void ToBuild()
     {
+        Debug.Log("Start to build ......jajaja");
+
         List<string> levels = new List<string>();
         foreach(
         EditorBuildSettingsScene scene in EditorBuildSettings.scenes)
@@ -20,7 +22,7 @@ public class Build : Editor
         }
 
         string apkName = "./Test.apk";
-        BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.Android, BuildOptions.None);
+        //BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.Android, BuildOptions.None);
         AssetDatabase.Refresh();
 
         Debug.Log("Build Done");
