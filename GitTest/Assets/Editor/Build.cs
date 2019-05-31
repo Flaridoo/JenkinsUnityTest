@@ -22,7 +22,7 @@ public class Build : Editor
         }
 
         string apkName = "./Test.apk";
-        //BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.Android, BuildOptions.None);
+        BuildPipeline.BuildPlayer(levels.ToArray(), apkName, BuildTarget.Android, BuildOptions.None);
         AssetDatabase.Refresh();
 
         Debug.Log("Build Done");
